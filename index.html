@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>BERTOLIS – Accompagnement administratif & formations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+  line-height: 1.9;
+}
+
+header {
+  background: #0f2a44;
+  padding: 25px;
+  text-align: center;
+}
+
+header img {
+  max-width: 260px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  background: #143d63;
+  padding: 14px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  display: none;
+  max-width: 1100px;
+  margin: auto;
+  padding: 90px 20px;
+}
+
+section.active {
+  display: block;
+}
+
+h1, h2, h3 {
+  color: #0f2a44;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 40px;
+  margin: 40px 0;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+}
+
+button {
+  background: #0f2a44;
+  color: white;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #143d63;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+footer {
+  background: #0f2a44;
+  color: white;
+  text-align: center;
+  padding: 35px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo-bertolis.png" alt="BERTOLIS">
+<h1>BERTOLIS</h1>
+<p>Accompagnement administratif & financier des dirigeants</p>
+</header>
+
+<nav>
+<a onclick="showPage('presentation')">Présentation</a>
+<a onclick="showPage('creation')">Création d’entreprise</a>
+<a onclick="showPage('suivi')">Suivi administratif</a>
+<a onclick="showPage('formations')">Formations</a>
+<a onclick="showPage('contact')">Contact</a>
+</nav>
+
+<!-- PRÉSENTATION -->
+<section id="presentation" class="active">
+<h2>Présentation de BERTOLIS</h2>
+
+<p><strong>Betty AUBERT – Fondatrice de BERTOLIS</strong></p>
+
+<p>
+Directrice Administrative et Financière depuis plus de 15 ans, j’accompagne
+les créateurs d’entreprise et dirigeants de TPE à chaque étape clé de leur
+parcours entrepreneurial, depuis la création de leur activité jusqu’au suivi
+administratif et organisationnel quotidien.
+</p>
+
+<p>
+Mon expérience me permet d’avoir une vision globale et stratégique de
+l’entreprise. J’ai occupé des fonctions couvrant l’ensemble des services
+supports : administration des ventes (ADV), contrôle de gestion,
+comptabilité, logistique et informatique. Cette polyvalence est aujourd’hui
+un véritable atout pour proposer un accompagnement cohérent et structuré.
+</p>
+
+<p>
+J’ai également piloté de nombreux projets de mise en place d’ERP
+(comptabilité, ADV, EDI, workflows), en lien avec les équipes opérationnelles.
+Mon approche est résolument pragmatique, orientée résultats et efficacité.
+</p>
+
+<p>
+Avec BERTOLIS, mon objectif est simple : permettre aux dirigeants de
+sécuriser leur organisation administrative, de gagner en visibilité et de
+se concentrer pleinement sur le développement de leur activité, en toute
+sérénité.
+</p>
+</section>
+
+<!-- CRÉATION -->
+<section id="creation">
+<h2>Création d’entreprise</h2>
+
+<p>
+La création d’entreprise est une étape déterminante qui engage le dirigeant
+sur le long terme. Chaque décision prise au démarrage a un impact direct sur
+la fiscalité, la protection sociale, la rentabilité et l’organisation future.
+</p>
+
+<p>
+Chez BERTOLIS, nous vous accompagnons dès les premières réflexions afin de
+sécuriser vos choix et structurer un projet viable, cohérent et évolutif.
+</p>
+
+<div class="card">
+<h3>Choix du statut juridique</h3>
+<p>
+Micro-entreprise, Entreprise Individuelle, EURL, SARL, SASU ou SAS :
+chaque statut présente des spécificités en matière de fiscalité, de charges
+sociales, de responsabilité et de gouvernance. Nous analysons votre situation
+personnelle, vos objectifs et votre vision afin de vous orienter vers la
+structure la plus adaptée.
+</p>
+</div>
+
+<div class="card">
+<h3>Business plan & prévisionnel financier</h3>
+<p>
+Le business plan est un outil essentiel pour piloter votre activité et
+convaincre partenaires et financeurs. Il permet d’anticiper les besoins,
+d’évaluer la rentabilité et de définir une stratégie claire dès le départ.
+</p>
+</div>
+
+<div class="card">
+<h3>Formalités administratives</h3>
+<p>
+Nous prenons en charge l’ensemble des démarches administratives afin de vous
+faire gagner du temps et éviter toute erreur. Vous démarrez votre activité
+dans un cadre sécurisé et conforme.
+</p>
+</div>
+
+<button onclick="showPage('contact')">Être accompagné</button>
+</section>
+
+<!-- SUIVI -->
+<section id="suivi">
+<h2>Suivi administratif</h2>
+
+<p>
+Une gestion administrative rigoureuse est un pilier fondamental de la
+pérennité d’une entreprise. Elle permet d’anticiper, d’optimiser les
+ressources et de sécuriser l’activité au quotidien.
+</p>
+
+<p>
+BERTOLIS propose un accompagnement sur mesure, adapté à la taille et aux
+besoins spécifiques de chaque structure.
+</p>
+
+<div class="card">
+<h3>Gestion administrative et organisation</h3>
+<p>
+Mise en place de processus clairs, structuration des documents, optimisation
+des méthodes de travail et coordination avec les partenaires externes.
+</p>
+</div>
+
+<div class="card">
+<h3>Déclarations et obligations</h3>
+<p>
+Suivi des obligations légales et administratives, respect des échéances et
+sécurisation de votre conformité réglementaire.
+</p>
+</div>
+
+<div class="card">
+<h3>Accompagnement mensuel</h3>
+<p>
+Un accompagnement continu, évolutif et personnalisé, permettant au dirigeant
+de disposer d’un véritable support administratif au quotidien.
+</p>
+</div>
+
+<button onclick="showPage('contact')">Demander un devis</button>
+</section>
+
+<!-- FORMATIONS -->
+<section id="formations">
+<h2>Formations professionnelles</h2>
+
+<p>
+Les formations BERTOLIS sont conçues pour être immédiatement applicables,
+orientées pratique et adaptées aux réalités des entrepreneurs et
+professionnels.
+</p>
+
+<div class="card">
+<h3>Excel</h3>
+<button onclick="showPage('excel')">Découvrir la formation</button>
+</div>
+
+<div class="card">
+<h3>Power BI</h3>
+<button onclick="showPage('powerbi')">Découvrir la formation</button>
+</div>
+
+<div class="card">
+<h3>Comptabilité</h3>
+<button onclick="showPage('compta')">Découvrir la formation</button>
+</div>
+</section>
+
+<!-- EXCEL -->
+<section id="excel">
+<h2>Formation Excel</h2>
+<p>
+Cette formation permet de maîtriser Excel du niveau débutant à avancé.
+L’objectif est de gagner en autonomie, en efficacité et en fiabilité dans
+l’analyse et le suivi des données.
+</p>
+<button onclick="showPage('contact')">S’inscrire / Demander info</button>
+</section>
+
+<!-- POWER BI -->
+<section id="powerbi">
+<h2>Formation Power BI</h2>
+<p>
+Découvrez la data visualisation et apprenez à transformer vos données en
+tableaux de bord clairs, lisibles et décisionnels pour piloter votre activité.
+</p>
+<button onclick="showPage('contact')">S’inscrire / Demander info</button>
+</section>
+
+<!-- COMPTA -->
+<section id="compta">
+<h2>Formation Comptabilité</h2>
+<p>
+Formation dédiée aux entrepreneurs souhaitant comprendre leurs chiffres,
+interpréter un bilan et un compte de résultat et prendre des décisions
+éclairées.
+</p>
+<button onclick="showPage('contact')">S’inscrire / Demander info</button>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+
+<p>
+📞 06 10 80 11 68<br>
+✉️ betty.aubert@outlook.com
+</p>
+
+<form action="https://formspree.io/f/XXXXABCD" method="POST">
+<input type="text" name="nom" placeholder="Nom" required>
+<input type="email" name="email" placeholder="Email" required>
+
+<select name="besoin">
+<option>Création d’entreprise</option>
+<option>Suivi administratif</option>
+<option>Formation Excel</option>
+<option>Formation Power BI</option>
+<option>Formation Comptabilité</option>
+</select>
+
+<textarea name="message" placeholder="Votre message"></textarea>
+
+<button type="submit">Envoyer</button>
+</form>
+</section>
+
+<footer>
+© BERTOLIS – Tous droits réservés
+</footer>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+}
+</script>
+
+</body>
+</html>
